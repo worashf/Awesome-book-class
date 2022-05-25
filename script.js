@@ -27,14 +27,14 @@ class UI {
     if (books.length !== 0 && books) {
       books.forEach((book, index) => {
         bookDiv += `
-    <div class="book-item ${index % 2 ? 'white-back' : 'gray-back'}">
+      <div class="book-item ${index % 2 ? 'white-back' : 'gray-back'}">
 
-    <p class="book-info">${book.title} by ${book.author}</p>
+      <p class="book-info">${book.title} by ${book.author}</p>
 
 
-    <button type="button" id="remove-btn"  onClick='removeBook(${index})' class="remove-btn"> Remove </button>
+      <button type="button" id="remove-btn"  onClick='removeBook(${index})' class="remove-btn"> Remove </button>
 
-    </div>`;
+      </div>`;
       });
 
       listBook.innerHTML = bookDiv;
