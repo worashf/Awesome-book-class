@@ -77,4 +77,4 @@ addForm.addEventListener('submit', (e) => {
   }
 });
 
-UI.displayBooks(para);
+UI.displayBooks();
