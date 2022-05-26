@@ -121,3 +121,27 @@ header{
   height: 10%;
   align-self: flex-end;
 }
+
+.contact-page {
+  margin: 4rem 0 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  margin-bottom: 2.5rem;
+}
+
+.contact-texts {
+  margin-bottom: 20px;
+}
+
+.contact-txt {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contact-list li {
+  font-weight: 600;
+}
