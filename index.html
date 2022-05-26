@@ -9,39 +9,43 @@
 
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><p>Awesome Book</p></div>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item" id="book-list">List</li>
-                <li class="nav-item" id="add-book">Add new </li>
-                <li class="nav-item" id="contact">Contact</li>
-            </ul>
-        </nav>
-
-    </header>
-<main>
+    <header>
         <div class="container">
-
-
-            <section class="book-wrapper">
-            <h1 class="title">All Awesome Books</h1>
-            <div class="book-list" id="book-list">
-              
-        
-            </div>
-            <div class="line"> </div>
-            </section>
-            <section class="add-book">
-                <h2 class="add-title">Add a new  book</h2>
-                <form class="add-form" id="add-form">
-                    <input type="text" id="title" placeholder="Title" class="form-control"> <br>
-                    <input type="text" id="author" placeholder="Author" class="form-control"> <br>
-                    <input type="submit" class="add-btn" value="Add" id="add-btn">
-                </form>
-            </section>
+            <a href="#"  class="logo">
+             Awesome Book
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li><a id="list-book" class="nav-link">List</a></li>
+                    <li><a id="new-book" class="nav-link" >Add</a></li>
+                    <li><a id="contact" class="nav-link" >Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </main>
+    </header>
+
+       
+       
+            <section class="wrapper">
+                <h1 class="title">All Awesome Books</h1>
+                <div class="book-list" id="book-list">
+                  
+            
+                </div>
+                <div class="line"> </div>
+                </section>
+                <section class="add-book">
+                    <h2 class="add-title">Add a new  book</h2>
+                    <form class="add-form" id="add-form">
+                        <input type="text" id="title" placeholder="Title" class="form-control"> <br>
+                        <input type="text" id="author" placeholder="Author" class="form-control"> <br>
+                        <input type="submit" class="add-btn" value="Add" id="add-btn">
+                    </form>
+                </section>
+ 
+         
+   
+
     <script src="script.js" type="module"></script>
 </body>
 </html>
