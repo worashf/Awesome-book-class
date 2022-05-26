@@ -29,6 +29,17 @@ header{
   padding: 0.5rem;
 
 }
+.nav-link:hover{
+  color: gray;
+}
+.nav-link:active{
+  color: rgb(23, 23, 148);
+}
+#date{
+  margin: 2rem 5%;
+  float: right;
+
+}
 .container {
  display: flex;
  justify-content: space-between;
@@ -45,15 +56,15 @@ header{
 }
 
 
-.wrapper{
+#listBook{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.wrapper,
-.add-book,
-.contact-page,
+#listBook,
+#addBook,
+#contact-section,
 .footer {
   margin: 2rem 5%;
 }
@@ -92,7 +103,7 @@ header{
   width: 20%;
 }
 
-.add-book {
+#addBook {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,7 +136,7 @@ header{
   align-self: flex-end;
 }
 
-.contact-page {
+#contact-section {
   margin: 4rem 0 8rem 0;
   display: flex;
   flex-direction: column;
@@ -155,6 +166,10 @@ header{
   margin-bottom: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  width: 90%;
 }
 
 .copyright span {
