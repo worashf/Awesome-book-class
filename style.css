@@ -1,17 +1,42 @@
+ .header{
+   border: 1px solid #111;
+   background-color: blue;
+height: 3rem;
+display: flex;
+
+
+
+
+ }
+ .nav{
+   list-style: none;
+   display: flex;
+
+ }
+
 .container {
-  margin: 5% 10%;
+  margin: 20% 10%;
+  padding: 10%;
 }
+/* .book-wrapper{
+  margin: 10%;
+} */
 
 .book-list {
   border: 2px solid #111;
   width: 80%;
-  margin: 15px 0 15px 0;
+  /* margin-top: 10%; */
+
+
 }
 
 .book-item {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  
+  
+
+ 
 }
 
 .gray-back {
