@@ -3,14 +3,13 @@ import Book from './Book.js';
 const listBook = document.getElementById('book-list');
 const addForm = document.getElementById('add-form');
 const bookListing = document.getElementById('listBook');
-const bookReg =  document.getElementById('addBook');
-const contact= document.getElementById("contact-section");
+const bookReg = document.getElementById('addBook');
+const contact = document.getElementById('contact-section');
 
 const listLink = document.getElementById('list-book');
 const addLink = document.getElementById('new-book');
-const contactLink =document.getElementById("contact");
-const date = document.getElementById('date')
-
+const contactLink = document.getElementById('contact');
+const date = document.getElementById('date');
 
 class UI {
   static getBooks() {
@@ -85,69 +84,59 @@ addForm.addEventListener('submit', (e) => {
     author.value = '';
   }
 });
-function renderSection(page){
-    console.log(page)
-  switch(page){
-   case 'listBook':
-   bookListing.style.display="flex";
-   bookReg.style.display="none"
-   contact.style.display="none"
-   listLink.style.color="blue"
-   addLink.style.color="black"
-   contactLink.style.color="black"
-   break;
-   case 'addBook':
-    bookListing.style.display="none";
-    bookReg.style.display="flex"
-    contact.style.display="none"
-    listLink.style.color="black"
-    addLink.style.color="blue"
-    contactLink.style.color="black"
-    
-    break;
+function renderSection(page) {
+  switch (page) {
+    case 'listBook':
+      bookListing.style.display = 'flex';
+      bookReg.style.display = 'none';
+      contact.style.display = 'none';
+      listLink.style.color = 'blue';
+      addLink.style.color = 'black';
+      contactLink.style.color = 'black';
+      break;
+    case 'addBook':
+      bookListing.style.display = 'none';
+      bookReg.style.display = 'flex';
+      contact.style.display = 'none';
+      listLink.style.color = 'black';
+      addLink.style.color = 'blue';
+      contactLink.style.color = 'black';
 
-     
-     case 'contact-section':
-      bookListing.style.display="none";
-      bookReg.style.display="none"
-      contact.style.display="flex"
-      listLink.style.color="black"
-      addLink.style.color="black"
-      contactLink.style.color="blue"
       break;
 
-     
-     default:
-      bookListing.style.display="flex";
-      bookReg.style.display="none"
-      contact.style.display="none"
-      listLink.style.color="blue"
-      addLink.style.color="black"
-      contactLink.style.color="black"
+    case 'contact-section':
+      bookListing.style.display = 'none';
+      bookReg.style.display = 'none';
+      contact.style.display = 'flex';
+      listLink.style.color = 'black';
+      addLink.style.color = 'black';
+      contactLink.style.color = 'blue';
       break;
 
-
-
-
+    default:
+      bookListing.style.display = 'flex';
+      bookReg.style.display = 'none';
+      contact.style.display = 'none';
+      listLink.style.color = 'blue';
+      addLink.style.color = 'black';
+      contactLink.style.color = 'black';
+      break;
   }
-
 }
-listLink.addEventListener('click',()=>{
+listLink.addEventListener('click', () => {
   renderSection('listBook');
-})
+});
 
-addLink.addEventListener('click',()=>{
+addLink.addEventListener('click', () => {
   renderSection('addBook');
-})
-contactLink.addEventListener('click',()=>{
+});
+contactLink.addEventListener('click', () => {
   renderSection('contact-section');
-})
-window.onload =()=>{
+});
+window.onload = () => {
   renderSection('listBook');
-}
-let dateTime = new Date(Date.now());
-date.textContent =dateTime.toUTCString();
-
-
+};
+const dateTime = new Date(Date.now());
+date.textContent = dateTime.toUTCString();
 
 UI.displayBooks();
