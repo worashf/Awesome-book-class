@@ -1,4 +1,5 @@
 # Awesome-book-class
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
 In this project, we will be creating an *Awesome books class* repo. This will be done by first creating a feature branch then add a **README.md** file. The project will have a .gitignore file to ignore all unneccesary files together with three files for HTML, CSS and JavaScript.
 
@@ -23,6 +24,12 @@ Then cd into awesome-book directory.
 - Twitter: [@twitterhandle](https://twitter.com/WorashAboche)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/worash-abocherugn-a02219154/)
 - Linkedin: [Abdullateef Bello](https://www.linkedin.com/in/abdullateef-bello-1b8006228/)
+
+👤 **Worash Abocherugn**
+
+- GitHub: [@githubhandle](https://github.com/worashf)
+- Twitter: [@twitterhandle](https://twitter.com/WorashAboche)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/worash-abocherugn-a02219154/)
 
 # Contributing
 
